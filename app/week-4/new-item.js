@@ -13,7 +13,7 @@ export default function NewItem() {
   };
 
   return (
-    <div className="flex flex-col items-center gap-4 p-6 bg-gray-100 text-white rounded-lg shadow-lg">
+    <div className="flex flex-col items-center gap-4 p-6 bg-gray-950 text-white rounded-lg shadow-lg">
       <div className="flex items-center gap-4">
         <button
           className="px-4 py-2 bg-red-500 rounded disabled:opacity-50"

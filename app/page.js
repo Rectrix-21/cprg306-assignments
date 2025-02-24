@@ -2,6 +2,7 @@ import Link from "next/link";
 
 export default function Page() {
   return (
+    <main className="bg-black text-white min-h-screen flex flex-col items-center p-6">
     <div>
       <h1>CPRG 306: Web Development 2 - Assignments</h1>
       <p>
@@ -13,6 +14,10 @@ export default function Page() {
       <p>
         Link to week 4: <Link href="week-4">Week 4 </Link>
       </p>
+      <p>
+        Link to week 5: <Link href="week-5">Week 5 </Link>
+      </p>
     </div>
+    </main>
   );
 }
