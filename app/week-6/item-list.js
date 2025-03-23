@@ -22,11 +22,11 @@ export function ItemList() {
   }
 
   return (
-    <div className="bg-white shadow-md rounded-lg p-4">
+    <div className="bg-black shadow-md rounded-lg p-4">
       <div className="mb-4 flex gap-2">
         <button
           className={`px-3 py-1 rounded ${
-            sortBy === "name" ? "bg-blue-500 text-white" : "bg-gray-200"
+            sortBy === "name" ? "bg-blue-800 text-white" : "bg-gray-600"
           }`}
           onClick={() => setSortBy("name")}
         >
@@ -34,7 +34,7 @@ export function ItemList() {
         </button>
         <button
           className={`px-3 py-1 rounded ${
-            sortBy === "category" ? "bg-blue-500 text-white" : "bg-gray-200"
+            sortBy === "category" ? "bg-blue-800 text-white" : "bg-gray-600"
           }`}
           onClick={() => setSortBy("category")}
         >
@@ -42,7 +42,7 @@ export function ItemList() {
         </button>
         <button
           className={`px-3 py-1 rounded ${
-            sortBy === "grouped" ? "bg-blue-500 text-white" : "bg-gray-200"
+            sortBy === "grouped" ? "bg-blue-800 text-white" : "bg-gray-600"
           }`}
           onClick={() => setSortBy("grouped")}
         >
@@ -55,7 +55,7 @@ export function ItemList() {
               .sort()
               .map(([category, items]) => (
                 <li key={category} className="mb-4">
-                  <h2 className="text-lg font-bold">{category}</h2>
+                  <h2 className="text-lg text-white font-bold">{category}</h2>
                   <ul>
                     {items.map((item, index) => (
                       <Item key={index} {...item} />
